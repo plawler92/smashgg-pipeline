@@ -65,6 +65,10 @@ def get_event_entrants(event_slug, page, perPage):
                 page: $page
                 perPage: $perPage
             }){
+                pageInfo{
+                    total
+                    totalPages
+                }
                 nodes{
                     id
                     name
